@@ -1,1 +1,10 @@
 <h1>Github Pages</h1>
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdfFFYqAAAAAD2zKLpDYpSyP5aFdkAYB9Ssb17t"></script>
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LdfFFYqAAAAAD2zKLpDYpSyP5aFdkAYB9Ssb17t', {action: 'LOGIN'});
+    });
+  }
+</script>
